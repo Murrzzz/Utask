@@ -73,6 +73,7 @@ public class main_menu extends AppCompatActivity {
                 myToast = Toast.makeText(getApplicationContext(),"Settings", Toast.LENGTH_SHORT);
                 myToast.setGravity(Gravity.BOTTOM,0,50);
                 myToast.show();
+                removeItems();
             }
         });
 
@@ -104,6 +105,11 @@ public class main_menu extends AppCompatActivity {
     private void selectList()
     {
         Intent intent= new Intent(this, AddList.class);
+        startActivity(intent);
+    }
+    private void removeItems()
+    {
+        Intent intent= new Intent(this, RemoveItems.class);
         startActivity(intent);
     }
 }

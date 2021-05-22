@@ -29,16 +29,9 @@ public class AddItem extends AppCompatActivity {
         addbutton=(Button)findViewById(R.id.add_button);
         message=(EditText)findViewById(R.id.text_message);
         db=new DBHelper(this);
-        removeButton=(Button)findViewById(R.id.remove_button);
+       // removeButton=(Button)findViewById(R.id.remove_button);
 
 
-        removeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            deleteInfo();
-            }
-        });
 
         addbutton.setOnClickListener(new View.OnClickListener() {
             @Override
