@@ -1,5 +1,6 @@
 package com.example.administrator.utask;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -46,6 +47,7 @@ public class main_menu extends AppCompatActivity {
                 myToast = Toast.makeText(getApplicationContext(),"View All Tasks", Toast.LENGTH_SHORT);
                 myToast.setGravity(Gravity.BOTTOM,0,50);
                 myToast.show();
+                selectList();
             }
         });
 
@@ -58,6 +60,7 @@ public class main_menu extends AppCompatActivity {
                 myToast = Toast.makeText(getApplicationContext(),"Add Tasks", Toast.LENGTH_SHORT);
                 myToast.setGravity(Gravity.BOTTOM,0,50);
                 myToast.show();
+                AddNotes();
             }
         });
 
@@ -82,7 +85,25 @@ public class main_menu extends AppCompatActivity {
                 myToast = Toast.makeText(getApplicationContext(),"About Us", Toast.LENGTH_SHORT);
                 myToast.setGravity(Gravity.BOTTOM,0,50);
                 myToast.show();
+                selectAboutUs();
             }
         });
+    }
+    private void selectAboutUs()
+    {
+        Intent intent=new Intent(this, About_Us.class);
+        startActivity(intent);
+    }
+
+    private void AddNotes()
+    {
+        Intent intent= new Intent(this, AddItem.class);
+        startActivity(intent);
+    }
+
+    private void selectList()
+    {
+        Intent intent= new Intent(this, AddList.class);
+        startActivity(intent);
     }
 }
