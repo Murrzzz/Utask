@@ -37,7 +37,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="130dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/jp"
+                    android:src="@drawable/depedtambayan"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     />
@@ -47,7 +47,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:text="Island"
+                    android:text="DEPED TAMBAYAN"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/Pic1"
                     />
@@ -57,10 +57,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
                     android:layout_marginHorizontal="15dp"
-                    android:text="An Island or isle is any peice of subcontitnetal land \n that is surrounded by water"
+                    android:text=" is a new platform for professional teachers to voice out their genuine ideas and brilliant aspirations that concern the field of education."
                     app:layout_constraintTop_toBottomOf="@id/title_temp"
                     />
                 <Button
+                    android:id="@+id/btndepedtambayan"
                     style="@style/Widget.AppCompat.Button.Borderless.Colored"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -90,7 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="130dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/jp"
+                    android:src="@drawable/pdfdrive"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     />
@@ -100,7 +101,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:text="Island"
+                    android:text="PDFDRIVE"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/Pic2"
                     />
@@ -110,10 +111,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
                     android:layout_marginHorizontal="15dp"
-                    android:text="An Island or isle is any peice of subcontitnetal land \n that is surrounded by water"
+                    android:text="is a free search engine which allows you to search, preview and download millions of PDF files into your devices. Our crawlers are constantly scanning the world wide web to add PDF files to our database"
                     app:layout_constraintTop_toBottomOf="@id/title_temp2"
                     />
                 <Button
+                    android:id="@+id/btnpdfdrive"
                     style="@style/Widget.AppCompat.Button.Borderless.Colored"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -143,7 +145,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="120dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/jp"
+                    android:src="@drawable/cheatography"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     />
@@ -153,7 +155,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:text="Island"
+                    android:text="CHEATOGRAPHY"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/Pic3"
                     />
@@ -163,10 +165,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
                     android:layout_marginHorizontal="15dp"
-                    android:text="An Island or isle is any peice of subcontitnetal land \n that is surrounded by water"
+                    android:text="Cheatography is a collection of 4579 cheat sheets and quick references in 25 languages for everything from French to food!"
                     app:layout_constraintTop_toBottomOf="@id/title_temp3"
                     />
                 <Button
+                    android:id="@+id/btncheatography"
                     style="@style/Widget.AppCompat.Button.Borderless.Colored"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -180,6 +183,224 @@
 
         </android.support.v7.widget.CardView>
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:elevation="5dp"
+            app:cardCornerRadius="5dp">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/Pic4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/academia"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <TextView
+                    android:id="@+id/title_temp4"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="ACADEMIA"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Pic4"
+                    />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="Academia is the easiest way to share papers with millions of people across the world for free. A study published in PLOS ONE found that papers uploaded to Academia receive a 69% boost in citations over 5 years."
+                    app:layout_constraintTop_toBottomOf="@id/title_temp4"
+                    />
+                <Button
+                    android:id="@+id/btnacademia"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="Visit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:elevation="5dp"
+            app:cardCornerRadius="5dp">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/Pic5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/slidesgo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <TextView
+                    android:id="@+id/title_temp5"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="SLIDES GO"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Pic5"
+                    />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="SLIDES GO is a collection of 4579 cheat sheets and quick references in 25 languages for everything from French to food!"
+                    app:layout_constraintTop_toBottomOf="@id/title_temp5"
+                    />
+                <Button
+                    android:id="@+id/btnslidesgo"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="Visit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:elevation="5dp"
+            app:cardCornerRadius="5dp">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/Pic6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/printfriendly"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <TextView
+                    android:id="@+id/title_temp6"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="PRINT FRIENDLY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Pic6"
+                    />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="PrintFriendly cleans and formats web pages for perfect print experience. PrintFriendly removes ads, navigation and web page junk, so you save paper and ink when you print. It's free and easy to use. Perfect to use at home, the office, or whenever you need to print a web page.
+
+!"
+                    app:layout_constraintTop_toBottomOf="@id/title_temp6"
+                    />
+                <Button
+                    android:id="@+id/btnprintfriendly"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="Visit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:elevation="5dp"
+            app:cardCornerRadius="5dp">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/Pic7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/photomath"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <TextView
+                    android:id="@+id/title_temp7"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="PHOTOMATH"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Pic7"
+                    />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="Photomath reads and solves mathematical problems instantly by using the camera of your mobile device. Check your work for any printed or handwritten problems."
+                    app:layout_constraintTop_toBottomOf="@id/title_temp7"
+                    />
+                <Button
+                    android:id="@+id/btnphotomath"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="Visit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
 
     </LinearLayout>
 </ScrollView>
