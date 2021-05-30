@@ -1,48 +1,35 @@
 package com.example.administrator.utask;
 
-import android.content.Context;
+
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button button;
+
+    private static  int SPLASH_TIME = 4000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        button=(Button)findViewById(R.id.btnStart);
-
-        button.setOnClickListener(new View.OnClickListener() {
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onClick(View v) {
+            public void run() {
+                goToStart();
 
-                mainMenu();
             }
-        });
-
+        },SPLASH_TIME);
 
     }
 
-    private void mainMenu()
+    private void goToStart()
     {
-        Intent intent=new Intent(this, main_menu.class);
-        startActivity(intent);
+        Intent homeIntent = new Intent(this, Bottom_activity.class);
+        startActivity(homeIntent);
+        //finish();
     }
-
-
-
 
 }
