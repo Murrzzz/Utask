@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void goToStart()
     {
-        Intent homeIntent = new Intent(this, Bottom_activity.class);
+        Intent homeIntent = new Intent(this, Start.class);
         startActivity(homeIntent);
         //finish();
     }

@@ -37,6 +37,9 @@ public class Bottom_activity extends AppCompatActivity {
                             case R.id.nav_More:
                                 selectedFragment= new More_Fragment();
                                 break;
+                            case R.id.nav_about:
+                                selectedFragment= new More_Fragment();
+                                break;
                         }
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                                 selectedFragment).commit();

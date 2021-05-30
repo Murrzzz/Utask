@@ -10,7 +10,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.98">
 
-
-    </android.support.v7.widget.RecyclerView>
+    ></android.support.v7.widget.RecyclerView>
 
 </LinearLayout>

@@ -21,7 +21,7 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/round_corner"
 
-            app:itemIconTint="@drawable/item_selector"
+
 
         app:menu="@menu/bottom_navigation"
 
