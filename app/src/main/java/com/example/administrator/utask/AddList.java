@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +24,7 @@ public class AddList extends AppCompatActivity {
     List<ExampleItems> array=new ArrayList<>();
     DBHelper databaseAdapter;
     MainAdapter mainAdapter;
-
+    EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,26 @@ public class AddList extends AppCompatActivity {
         //Example items is a class to store the text and images
 
 
+        editText=(EditText)findViewById(R.id.edittext);//the search Edittextview
+
+        editText.addTextChangedListener(new TextWatcher() {//when the textbox of the search bar is change
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                filter(s.toString());
+            }
+        });
+
         /*
         Bundle extras=getIntent().getExtras();
         if (extras!=null)
@@ -61,13 +84,21 @@ public class AddList extends AppCompatActivity {
 */
 
        // array.add(new ExampleItems(R.drawable .ic_assignment_turned_in_black_24dp ,"Roger"));//adding values to the array using Exampleitems method
-
-
-
-
-
-
-
-
     }
+
+    private void filter(String text)//filter fo the search
+    {
+        ArrayList<ExampleItems> filteredlist = new ArrayList<>();//create new array to contain the filter data
+
+        for(ExampleItems item: array)
+        {
+            if(item.getmTitle().toLowerCase().contains(text.toLowerCase()))
+            {
+                filteredlist.add(item);
+            }
+        }
+        mainAdapter.filterlist(filteredlist);// the function of the filterlist is on the mainadapter
+    }
+
+
 }

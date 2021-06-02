@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -91,6 +92,10 @@ class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
     }
 
-
+    public void filterlist(ArrayList<ExampleItems> filteredlist)
+    {
+        array=filteredlist;
+        notifyDataSetChanged();
+    }
 
 }
