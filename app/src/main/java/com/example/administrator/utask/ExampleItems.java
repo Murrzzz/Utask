@@ -11,13 +11,13 @@ public class ExampleItems {
 
     private String mTitle;
     private String mMessge;
+    private int ID;
 
-    public ExampleItems(String mTitle, String mMessge) {
-
+    public ExampleItems(String mTitle, String mMessge, int ID) {
         this.mTitle = mTitle;
         this.mMessge = mMessge;
+        this.ID = ID;
     }
-
 
     public String getmTitle() {
         return mTitle;
@@ -25,5 +25,9 @@ public class ExampleItems {
 
     public String getmMessge() {
         return mMessge;
+    }
+
+    public int getID() {
+        return ID;
     }
 }

@@ -1,3 +1,4 @@
+
 package com.example.administrator.utask;
 
 import android.content.ContentValues;
@@ -5,9 +6,12 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static android.os.Build.ID;
 
 /**
  * Created by Administrator on 5/21/2021.
@@ -18,11 +22,13 @@ public class DBHelper extends SQLiteOpenHelper {
     DBHelper helper;
     SQLiteDatabase db;
 
+
     List<ExampleItems> array =new ArrayList<>();
 
     public static final String DATABASE_NAME="Note";
     public static final String TABLE_NAME="TBL_INFO";
     public static final String COL_ONE="TITLE";
+    public static final String COL_ID="ID";
     public static final String COL_TWO="MESSAGE";
     public static final String CREATE_TABLE="CREATE TABLE "+TABLE_NAME+"(ID INTEGER PRIMARY KEY AUTOINCREMENT, TITLE TEXT, MESSAGE TEXT)";
     public static final String DROP_TABLE="DROP TABLE IF EXISTS"+TABLE_NAME;
@@ -65,28 +71,29 @@ public class DBHelper extends SQLiteOpenHelper {
 
 */
 
-        public List<ExampleItems> getAllData()
+    public List<ExampleItems> getAllData()
+    {
+        SQLiteDatabase db=this.getReadableDatabase();
+
+        String[] columns ={COL_ID,COL_ONE,
+                COL_TWO};
+        Cursor cursor= db.query(TABLE_NAME,columns,null,null,null,null,null);
+
+
+
+        while (cursor.moveToNext())
         {
-            SQLiteDatabase db=this.getReadableDatabase();
-
-            String[] columns ={COL_ONE,
-                               COL_TWO};
-            Cursor cursor= db.query(TABLE_NAME,columns,null,null,null,null,null);
-
-
-
-            while (cursor.moveToNext())
-            {
-
-                int index1= cursor.getColumnIndex(COL_ONE);
-                String title= cursor.getString(index1);
-                int index2=cursor.getColumnIndex(COL_TWO);
-                String message=cursor.getString(index2);
-                ExampleItems exampleItems =new ExampleItems(title,message);
-                array.add(exampleItems);
-            }
-            return array;
+            int index0=cursor.getColumnIndex(COL_ID);
+            int id=cursor.getInt(index0);
+            int index1= cursor.getColumnIndex(COL_ONE);
+            String title= cursor.getString(index1);
+            int index2=cursor.getColumnIndex(COL_TWO);
+            String message=cursor.getString(index2);
+            ExampleItems exampleItems =new ExampleItems(title,message,id);
+            array.add(exampleItems);
         }
+        return array;
+    }
 
 
 
@@ -103,6 +110,7 @@ public class DBHelper extends SQLiteOpenHelper {
         long result =sqLiteDatabase.insert(TABLE_NAME,null,contentValues);
         sqLiteDatabase.close();
 
+
         return  result != -1;
 
     }
@@ -113,5 +121,16 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db =this.getReadableDatabase();
         return  db.delete(TABLE_NAME,"TITLE=?",new String[]{id});
     }
+
+    public Boolean updateInfo(String ids, String editTexts,String ID) {
+        SQLiteDatabase sqLiteDatabase= this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(COL_ID, ID);
+        contentValues.put(COL_ONE, ids);
+        contentValues.put(COL_TWO, editTexts);
+        int result = sqLiteDatabase.update(TABLE_NAME, contentValues, " ID= ?", new String[]{ID});
+        return result >0;
+    }
+
 
 }

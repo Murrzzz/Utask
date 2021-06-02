@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20dp">
 
+
+    <EditText
+        android:id="@+id/message_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:hint="Take Notes Here."
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/txtTitle"
@@ -13,12 +24,52 @@
         android:textSize="20dp"
         />
 
-    <Button
-        android:id="@+id/remove_button"
-        android:layout_width="match_parent"
+
+    <EditText
+        android:id="@+id/IDS"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/message_text"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:visibility="invisible" />
+
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:fab_addButtonColorNormal="@color/Blue"
+        app:fab_addButtonColorPressed="#ffffff">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/remove_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_delete"
+            app:fab_size="mini"
+            android:tooltipText="Delete"
+            android:contextClickable="true"
+            app:fab_colorNormal="@color/Button4"
+            app:fab_colorPressed="#ffffff"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/update_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_update"
+            app:fab_size="mini"
+            android:contextClickable="true"
+            android:tooltipText="Update"
+            app:fab_colorNormal="@color/Button1"
+            app:fab_colorPressed="#ffffff"/>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
 
 
 

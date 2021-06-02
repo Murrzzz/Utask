@@ -1,12 +1,13 @@
+
 package com.example.administrator.utask;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 
 import java.util.List;
 
@@ -75,7 +76,21 @@ class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         public void onClick(View v) {
             int itemPosition= recyclerView.getChildAdapterPosition(v);
             String item= array.get(itemPosition).getmTitle();
-            Toast.makeText(context, item, Toast.LENGTH_SHORT).show();
+            String message=array.get(itemPosition).getmMessge();
+            Integer ID=array.get(itemPosition).getID();
+            Intent intent=new Intent(context,RemoveItems.class);
+            intent.putExtra("message1", item);
+            intent.putExtra("message2", message);
+            intent.putExtra("message3", ID);
+            // Intent intentt = new Intent(getApplicationContext(), EditText.class);
+            context.startActivity(intent);
+
         }
+
+
+
     }
+
+
+
 }

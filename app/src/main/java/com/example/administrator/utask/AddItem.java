@@ -1,3 +1,4 @@
+
 package com.example.administrator.utask;
 
 import android.content.Intent;
@@ -29,7 +30,6 @@ public class AddItem extends AppCompatActivity {
         addbutton=(Button)findViewById(R.id.add_button);
         message=(EditText)findViewById(R.id.text_message);
         db=new DBHelper(this);
-       // removeButton=(Button)findViewById(R.id.remove_button);
 
 
 
@@ -37,7 +37,6 @@ public class AddItem extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-            //    Add_items();
                 insertInfo();
             }
         });
@@ -72,7 +71,8 @@ public class AddItem extends AppCompatActivity {
         String Textone= title.getText().toString();
         String Texttwo=message.getText().toString();
         boolean result =db.insertInfo(Textone,Texttwo);
-
+        Intent intent=new Intent(this, main_menu.class);
+        startActivity(intent);
         if (result)
             Toast.makeText(this,"Insert Success", Toast.LENGTH_SHORT).show();
         else
@@ -85,6 +85,7 @@ public class AddItem extends AppCompatActivity {
         String id =title.getText().toString();
         int result =db.deleteInfo(id);
         Toast.makeText(this,result+" :Rows affected", Toast.LENGTH_LONG).show();
+
     }
 
 }
