@@ -27,16 +27,16 @@ public class Start extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                mainMenu();
+                goToMood();
             }
         });
 
 
     }
 
-    private void mainMenu()
+    private void goToMood()
     {
-        Intent intent=new Intent(this, Bottom_activity.class);
+        Intent intent=new Intent(this, MoodRandom.class);
         startActivity(intent);
     }
 

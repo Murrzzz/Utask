@@ -1,5 +1,57 @@
 <resources>
     <string name="app_name">UTask</string>
 
+    <!--moodHappy-->
+    <string-array name = "moodHappyText">
+        <item>"Happy01"</item>
+        <item>"Happy02"</item>
+    </string-array>
+
+    <string-array name="moodHappyCrd">
+        <item>"Happy01_crd"</item>
+        <item>"Happy02_crd"</item>
+    </string-array>
+
+
+    <!--moodOkay-->
+    <string-array name = "moodOkayText">
+        <item>"Okay01"</item>
+        <item>"Okay02"</item>
+    </string-array>
+
+    <string-array name="moodOkayCrd">
+        <item>"Okay01_crd"</item>
+        <item>"Okay02_crd"</item>
+    </string-array>
+
+
+    <!--moodUpset-->
+    <string-array name = "moodUpsetText">
+        <item>"Upset01"</item>
+        <item>"Upset02"</item>
+    </string-array>
+
+    <string-array name="moodUpsetCrd">
+        <item>"Upset_crd"</item>
+        <item>"Upset02_crd"</item>
+    </string-array>
+
+
+    <!--moodSad-->
+    <string-array name = "moodSadText">
+        <item>"It's alright to stop. \nDon't run without knowing where you're going anymore."</item>
+        <item>"It's alright to not have any dreams.\nIf you have moments where you can feel happiness."</item>
+        <item>"We deserve a life. \nWhether it's big or small, you're just doing you."</item>
+        <item>"Life is long, go slow. \nAt the end, there will be a paradise of your dreams."</item>
+        <item>"I hope you don't forget that giving up decisively also counts as courage."</item>
+    </string-array>
+
+    <string-array name="moodSadCrd">
+        <item>"from Paradise - BTS"</item>
+        <item>"from Paradise - BTS"</item>
+        <item>"from Paradise - BTS"</item>
+        <item>"from Paradise - BTS"</item>
+        <item>"from Burn It - Agust D"</item>
+    </string-array>
 
 </resources>

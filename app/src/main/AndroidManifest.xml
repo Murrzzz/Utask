@@ -23,7 +23,7 @@
         <activity android:name=".RemoveItems"></activity>
         <activity android:name=".Start"></activity>
         <activity android:name=".Bottom_activity"></activity>
-
+       <activity android:name=".MoodRandom"></activity>
     </application>
 
 </manifest>
