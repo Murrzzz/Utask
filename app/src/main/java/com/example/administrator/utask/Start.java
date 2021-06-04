@@ -36,7 +36,7 @@ public class Start extends AppCompatActivity {
 
     private void mainMenu()
     {
-        Intent intent=new Intent(this, Bottom_activity.class);
+        Intent intent=new Intent(this, main_menu.class);
         startActivity(intent);
     }
 
