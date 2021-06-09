@@ -24,15 +24,6 @@ public class Home_Fragment extends Fragment {
 
         View view= inflater.inflate(R.layout.fragment_home,container,false);
 
-      /*  moodMessage = getArguments().getString("Message");
-        msgDisplay = view.findViewById(R.id.txtMoodMessage);
-        msgDisplay.setText(moodMessage);
-
-        moodSource = getArguments().getString("Source");
-        srcDisplay = view.findViewById(R.id.txtMoodSource);
-        srcDisplay.setText(moodSource);*/
-
-
         return view;
     }
 

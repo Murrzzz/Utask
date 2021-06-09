@@ -40,6 +40,10 @@ public class Bottom_activity extends AppCompatActivity {
                             case R.id.nav_about:
                                 selectedFragment= new More_Fragment();
                                 break;
+                            case R.id.nav_Mood:
+                                selectedFragment= new Mood_Fragment();
+                                break;
+
                         }
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                                 selectedFragment).commit();
