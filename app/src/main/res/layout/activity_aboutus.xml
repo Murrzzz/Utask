@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/m"
+                android:layout_width="308dp"
+                android:layout_height="wrap_content"
+                android:text="ABOUT US"
+                android:textAllCaps="true"
+
+                android:textSize="30sp"
+                android:textStyle="bold"
+                 />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="13dp"
+                android:orientation="vertical"></LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- bulaclac -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg1"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/a1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John Philip N. Bulaclac"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp" />
+                    <TextView
+                        android:id="@+id/a2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/a1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="February 11 2001"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/a2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:maxHeight="100dp"
+                        android:src = "@drawable/jp"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <!-- castillo -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg1"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kenny Lloyd V. Castillo"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp" />
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/t1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OCTOBER 23 2000"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/t2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:maxHeight="100dp"
+                        android:src = "@drawable/ken"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <!-- espinola -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg1"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/e1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Demverleen R. Espinola"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp" />
+                    <TextView
+                        android:id="@+id/e2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/e1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="October 7 1999"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/e2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:maxHeight="100dp"
+                        android:src = "@drawable/dem"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <!-- maglangit -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg1"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/q1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trizhalyn L. Maglangit"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp" />
+                    <TextView
+                        android:id="@+id/q2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/q1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="January 3 2001"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/q2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:maxHeight="100dp"
+                        android:src = "@drawable/triz"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <!-- regpala -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg1"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/s1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John Leoj M. Regpala"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp" />
+                    <TextView
+                        android:id="@+id/s2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/s1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="July 1 2000"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/s2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:maxHeight="100dp"
+                        android:src = "@drawable/leoj"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <!-- sangol -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg1"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/w1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roger Moore A. Sangol"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp" />
+                    <TextView
+                        android:id="@+id/w2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/w1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="March 5 2001"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/w2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:maxHeight="100dp"
+                        android:src = "@drawable/roger"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <!-- turiaga -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg1"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/z1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Charles Daniel M. Turiaga"
+                        android:textSize="20sp"
+                        android:textColor="#ffff"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp" />
+                    <TextView
+                        android:id="@+id/z2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/z1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="July 23 2001"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:layout_below="@id/z2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:maxHeight="100dp"
+                        android:src = "@drawable/charles"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

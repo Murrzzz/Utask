@@ -1,5 +1,99 @@
 <resources>
     <string name="app_name">UTask</string>
 
+    <!--moodHappy-->
+    <string-array name = "moodHappyText">
+        <item>"The righteous cry, and the LORD hears, and delivers them out of all their troubles."</item>
+        <item>"Take delight in the Lord, and he will give you the desires of your heart."</item>
+        <item>"Happy is the one who seizes your infants and dashes them against the rocks."</item>
+        <item>"A happy heart makes the face cheerful, but heartache crushes the spirit."</item>
+        <item>"Our mouths were filled with laughter, our tongues with songs of joy."</item>
+        <item>"Because the sky clears when I think of you, I gave my sadness away."</item>
+        <item>"In the end, there's going to be somebody who'll just want you, so, you just do you."</item>
+    </string-array>
+
+    <string-array name="moodHappyCrd">
+        <item>"from Psalm 34:17"</item>
+        <item>"from Psalm 37:4"</item>
+        <item>"from Psalm 137:9 (NIV)"</item>
+        <item>"from Proverbs 15:13 (NIV)"</item>
+        <item>"from Psalm 126:2"</item>
+        <item>"from Save Me - BTS"</item>
+        <item>"from Do You - RM"</item>
+    </string-array>
+
+
+    <!--moodOkay-->
+    <string-array name = "moodOkayText">
+        <item>"Commit your way to the LORD; trust also in him; and he shall bring it to pass."</item>
+        <item>"He heals the broken in heart, and binds up their wounds."</item>
+        <item>"Cast your cares on the LORD and he will sustain you; he will never let the righteous be shaken."</item>
+        <item>"You keep him in perfect peace whose mind is stayed on you, because he trusts in you."</item>
+        <item>"For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind."</item>
+        <item>"It won't be easy, but have this engraved in you heart: if you think you're gonna crash, accelerate even harder."</item>
+    </string-array>
+
+    <string-array name="moodOkayCrd">
+        <item>"from Psalm 37:5"</item>
+        <item>"from Psalm 147:3"</item>
+        <item>"from Psalm 55:22 (NIV)"</item>
+        <item>"from Isaiah 26:3 (ESV)"</item>
+        <item>"from 2 Timothy 1:7 (KJV)"</item>
+        <item>"from Intro: Nevermind - BTS"</item>
+    </string-array>
+
+
+    <!--moodUpset-->
+    <string-array name = "moodUpsetText">
+        <item>"Don’t give in to worry or anger; it only leads to trouble."</item>
+        <item>"Keep your temper under control; it is foolish to harbor a grudge."</item>
+        <item>"A soft answer turns away wrath, but a harsh word stirs up anger."</item>
+        <item>"If you become angry, do not let your anger lead you into sin, and do not stay angry all day."</item>
+        <item>"Get rid of all bitterness, passion, and anger. No more shouting or insults, no more hateful feelings of any sort."</item>
+    </string-array>
+
+    <string-array name="moodUpsetCrd">
+        <item>"from Psalm 37:8"</item>
+        <item>"from Ecclesiastes 7:9"</item>
+        <item>"from Proverbs 15:1"</item>
+        <item>"from Ephesians 4:26"</item>
+        <item>"from Ephesians 4:31"</item>
+    </string-array>
+
+
+    <!--moodSad-->
+    <string-array name = "moodSadText">
+        <item>"It's alright to stop. \nDon't run without knowing where you're going anymore."</item>
+        <item>"We deserve a life. \nWhether it's big or small, you're just doing you."</item>
+        <item>"Life is long, go slow. \nAt the end, there will be a paradise of your dreams."</item>
+        <item>"I hope you don't forget that giving up decisively also counts as courage."</item>
+        <item>"Suffering is universal. All creation suffers."</item>
+        <item>"Sorrow is better than laughter, for sadness has a refining influence on us."</item>
+        <item>"I consider that our present sufferings are not worth comparing with the glory that will be revealed in us."</item>
+        <item>"Don't be afraid and hold my hand."</item>
+        <item>"It won't be easy, but have this engraved in you heart: if you think you're gonna crash, accelerate even harder."</item>
+        <item>"In the end, there's going to be somebody who'll just want you, so, you just do you."</item>
+        <item>"Don't disappear because you are one great existence.\nLet us shine."</item>
+        <item>"Someone else will surely be comforted by your thorns.\nWe are each other's night scenery, each other's moon."</item>
+        <item>"I won't say clichéd things like 'have strength'\nI'll just listen to you."</item>
+        <item>"It's okay to shed the tears, but don't you tear yourself."</item>
+    </string-array>
+
+    <string-array name="moodSadCrd">
+        <item>"from Paradise - BTS"</item>
+        <item>"from Paradise - BTS"</item>
+        <item>"from Paradise - BTS"</item>
+        <item>"from Burn It - Agust D"</item>
+        <item>"from Romans 8:22"</item>
+        <item>"from Ecclesiastes 7:3 NLT"</item>
+        <item>"from Romans 8:18"</item>
+        <item>"from Intro: Serendipity - BTS"</item>
+        <item>"from Intro: Nevermind - BTS"</item>
+        <item>"from Do You - RM"</item>
+        <item>"from Mikrokosmos - BTS"</item>
+        <item>"from moonchild - RM"</item>
+        <item>"from Magic Shop - BTS"</item>
+        <item>"from moonchild - RM"</item>
+    </string-array>
 
 </resources>

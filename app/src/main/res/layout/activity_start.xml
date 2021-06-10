@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/StartViolet"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:src="@drawable/ic_wave"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/starts"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:textSize="20dp"
+        android:textColor="#160E2C"
+        android:text="Express Your Thoughts\n through Notes"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:text="Start"
+        android:background="#00B0FF"
+        android:textColor="#fff"
+        android:shadowColor="#fff"
+        android:layout_marginTop="500dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
