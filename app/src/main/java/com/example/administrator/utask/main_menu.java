@@ -64,18 +64,7 @@ public class main_menu extends AppCompatActivity {
             }
         });
 
-        Button buttonSettings =(Button)findViewById(R.id.btnSettings);
-        buttonSettings.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                if(myToast!= null)
-                    myToast.cancel();
-                myToast = Toast.makeText(getApplicationContext(),"Settings", Toast.LENGTH_SHORT);
-                myToast.setGravity(Gravity.BOTTOM,0,50);
-                myToast.show();
-                removeItems();
-            }
-        });
+
 
         Button buttonAboutUs =(Button)findViewById(R.id.btnAboutUs);
         buttonAboutUs.setOnClickListener(new View.OnClickListener(){

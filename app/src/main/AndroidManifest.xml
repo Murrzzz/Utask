@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".main_menu"></activity>
+
         <activity android:name=".About_Us"></activity>
         <activity android:name=".AddItem"></activity>
         <activity android:name=".AddList"></activity>

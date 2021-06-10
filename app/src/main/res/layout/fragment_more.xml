@@ -4,15 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
+
+
     android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:background="@color/StartViolet"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
 <ScrollView
     android:layout_width="match_parent"
-    android:layout_height="510dp">
+    android:layout_height="match_parent"
+    android:layout_marginBottom="67dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +28,8 @@
             android:layout_marginTop="20dp"
             android:scrollbars="vertical"
             android:elevation="5dp"
-            app:cardCornerRadius="5dp">
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -47,6 +50,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
+
                     android:text="DEPED TAMBAYAN"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/Pic1"
@@ -55,7 +59,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
+                    android:padding="5dp"
                     android:layout_marginHorizontal="15dp"
                     android:text=" is a new platform for professional teachers to voice out their genuine ideas and brilliant aspirations that concern the field of education."
                     app:layout_constraintTop_toBottomOf="@id/title_temp"
@@ -80,7 +84,8 @@
             android:layout_marginTop="20dp"
             android:scrollbars="vertical"
             android:elevation="5dp"
-            app:cardCornerRadius="5dp">
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -109,7 +114,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
+                    android:padding="5dp"
                     android:layout_marginHorizontal="15dp"
                     android:text="is a free search engine which allows you to search, preview and download millions of PDF files into your devices. Our crawlers are constantly scanning the world wide web to add PDF files to our database"
                     app:layout_constraintTop_toBottomOf="@id/title_temp2"
@@ -134,7 +139,8 @@
             android:layout_marginTop="20dp"
             android:scrollbars="vertical"
             android:elevation="5dp"
-            app:cardCornerRadius="5dp">
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -163,7 +169,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
+                    android:padding="5dp"
                     android:layout_marginHorizontal="15dp"
                     android:text="Cheatography is a collection of 4579 cheat sheets and quick references in 25 languages for everything from French to food!"
                     app:layout_constraintTop_toBottomOf="@id/title_temp3"
@@ -189,7 +195,8 @@
             android:layout_marginTop="20dp"
             android:scrollbars="vertical"
             android:elevation="5dp"
-            app:cardCornerRadius="5dp">
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -218,7 +225,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
+                    android:padding="5dp"
                     android:layout_marginHorizontal="15dp"
                     android:text="Academia is the easiest way to share papers with millions of people across the world for free. A study published in PLOS ONE found that papers uploaded to Academia receive a 69% boost in citations over 5 years."
                     app:layout_constraintTop_toBottomOf="@id/title_temp4"
@@ -243,7 +250,8 @@
             android:layout_marginTop="20dp"
             android:scrollbars="vertical"
             android:elevation="5dp"
-            app:cardCornerRadius="5dp">
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -272,7 +280,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
+                    android:padding="5dp"
                     android:layout_marginHorizontal="15dp"
                     android:text="SLIDES GO is a collection of 4579 cheat sheets and quick references in 25 languages for everything from French to food!"
                     app:layout_constraintTop_toBottomOf="@id/title_temp5"
@@ -297,7 +305,8 @@
             android:layout_marginTop="20dp"
             android:scrollbars="vertical"
             android:elevation="5dp"
-            app:cardCornerRadius="5dp">
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -326,7 +335,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
+                    android:padding="5dp"
                     android:layout_marginHorizontal="15dp"
                     android:text="PrintFriendly cleans and formats web pages for perfect print experience. PrintFriendly removes ads, navigation and web page junk, so you save paper and ink when you print. It's free and easy to use. Perfect to use at home, the office, or whenever you need to print a web page.
 
@@ -353,7 +362,8 @@
             android:layout_marginTop="20dp"
             android:scrollbars="vertical"
             android:elevation="5dp"
-            app:cardCornerRadius="5dp">
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -382,7 +392,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
+                    android:padding="5dp"
                     android:layout_marginHorizontal="15dp"
                     android:text="Photomath reads and solves mathematical problems instantly by using the camera of your mobile device. Check your work for any printed or handwritten problems."
                     app:layout_constraintTop_toBottomOf="@id/title_temp7"

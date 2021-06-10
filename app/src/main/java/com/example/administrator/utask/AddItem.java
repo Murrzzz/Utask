@@ -71,7 +71,7 @@ public class AddItem extends AppCompatActivity {
         String Textone= title.getText().toString();
         String Texttwo=message.getText().toString();
         boolean result =db.insertInfo(Textone,Texttwo);
-        Intent intent=new Intent(this, main_menu.class);
+        Intent intent=new Intent(this, Bottom_activity.class);
         startActivity(intent);
         if (result)
             Toast.makeText(this,"Insert Success", Toast.LENGTH_SHORT).show();

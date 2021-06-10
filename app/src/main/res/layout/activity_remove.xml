@@ -21,6 +21,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Title"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
         android:textSize="20dp"
         />
 

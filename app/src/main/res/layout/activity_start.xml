@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    >
 
     <View
         android:layout_width="match_parent"
@@ -34,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="400dp"
         android:textSize="20dp"
-        android:textColor="#160E2C"
+        android:textColor="#ffff"
         android:text="Express Your Thoughts\n through Notes"
         android:textAlignment="center"/>
     <Button

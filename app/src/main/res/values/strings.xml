@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">UTask</string>
-
+    <string name="success">Success</string>
+    <string name="warning">Warning</string>
+    <string name="error">Error</string>
+    <string name="success_title">Confirm?</string>
+    <string name="warning_title">Warning Title</string>
+    <string name="dummy_text">this is the text dummy text edit if you want</string>
+    <string name="okay">Okay</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="update">Do you want to Update?</string>
 
 </resources>
