@@ -166,7 +166,7 @@ public class RemoveItems extends AppCompatActivity {
     {
         AlertDialog.Builder builder= new AlertDialog.Builder(RemoveItems.this, R.style.AlertDialogTheme);
         View view = LayoutInflater.from(RemoveItems.this).inflate(
-                R.layout.layout_warning_dialog,
+                R.layout.layout_warning_delete,
                 (ConstraintLayout)findViewById(R.id.dialog_container)
         );
         builder.setView(view);

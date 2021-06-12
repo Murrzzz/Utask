@@ -297,7 +297,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="60dp"
         android:adjustViewBounds="true"
         android:background="@drawable/mood_transparent"
         android:backgroundTint="#89c2d9"
