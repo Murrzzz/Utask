@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/StartViolet"
     android:padding="20dp"
     >
 
@@ -61,6 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 app:cardCornerRadius="10dp"
+
                 android:layout_marginTop="10dp">
 
 
@@ -76,7 +78,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="John Philip N. Bulaclac"
-                        android:textSize="20sp"
+                        android:textSize="16sp"
                         android:textColor="#ffff"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
@@ -130,7 +132,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kenny Lloyd V. Castillo"
-                        android:textSize="20sp"
+                        android:textSize="16sp"
                         android:textColor="#ffff"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
@@ -184,7 +186,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Demverleen R. Espinola"
-                        android:textSize="20sp"
+                        android:textSize="16sp"
                         android:textColor="#ffff"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
@@ -238,7 +240,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Trizhalyn L. Maglangit"
-                        android:textSize="20sp"
+                        android:textSize="16sp"
                         android:textColor="#ffff"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
@@ -292,7 +294,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="John Leoj M. Regpala"
-                        android:textSize="20sp"
+                        android:textSize="16sp"
                         android:textColor="#ffff"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
@@ -346,7 +348,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Roger Moore A. Sangol"
-                        android:textSize="20sp"
+                        android:textSize="16sp"
                         android:textColor="#ffff"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
@@ -400,7 +402,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Charles Daniel M. Turiaga"
-                        android:textSize="20sp"
+                        android:textSize="16sp"
                         android:textColor="#ffff"
                         android:textStyle="bold"
                         android:layout_marginTop="10dp"
