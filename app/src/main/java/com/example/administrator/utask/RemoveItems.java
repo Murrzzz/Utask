@@ -59,27 +59,26 @@ public class RemoveItems extends AppCompatActivity {
         remove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(RemoveItems.this);
-                alertDialogBuilder.setTitle("Confirm");//Title
-                alertDialogBuilder.setMessage("Do you like to Delete?")
-                        .setCancelable(false)
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                deleteInfo();// When you click yes
-                                RemoveItems.this.finish();
-                            }
-                        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        //When you click no
-                        dialog.cancel();
-                    }
-                });
-                AlertDialog alertDialog =alertDialogBuilder.create();//Create the alert dialog
-                alertDialog.show();//show the dialog
+                delete_dialog();
+//                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(RemoveItems.this);
+//                alertDialogBuilder.setTitle("Confirm");//Title
+//                alertDialogBuilder.setMessage("Do you like to Delete?")
+//                        .setCancelable(false)
+//                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+//                            @Override
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                deleteInfo();// When you click yes
+//                                RemoveItems.this.finish();
+//                            }
+//                        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        //When you click no
+//                        dialog.cancel();
+//                    }
+//                });
+//                AlertDialog alertDialog =alertDialogBuilder.create();//Create the alert dialog
+//                alertDialog.show();//show the dialog
 
             }
         });
@@ -88,7 +87,7 @@ public class RemoveItems extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //showWarning();
-                YesorNo();
+                update_dialog();
 
             }
         });
@@ -105,7 +104,7 @@ public class RemoveItems extends AppCompatActivity {
         );
         builder.setView(view);
         ((TextView)view.findViewById(R.id.textTitle)).setText(getResources().getString(R.string.success_title));
-        ((TextView)view.findViewById(R.id.textmessage)).setText(getResources().getString(R.string.dummy_text));
+        ((TextView)view.findViewById(R.id.textmessage)).setText(getResources().getString(R.string.update_text));
         ((Button)view.findViewById(R.id.buttonaction)).setText(getResources().getString(R.string.okay));
         ((ImageView)view.findViewById(R.id.imageicon)).setImageResource(R.drawable.ic_done);
 
@@ -124,7 +123,7 @@ public class RemoveItems extends AppCompatActivity {
         alertDialog.show();
     }
 
-    private void YesorNo()
+    private void update_dialog()
     {
         AlertDialog.Builder builder= new AlertDialog.Builder(RemoveItems.this, R.style.AlertDialogTheme);
         View view = LayoutInflater.from(RemoveItems.this).inflate(
@@ -133,7 +132,7 @@ public class RemoveItems extends AppCompatActivity {
         );
         builder.setView(view);
         ((TextView)view.findViewById(R.id.textTitle)).setText(getResources().getString(R.string.success_title));
-        ((TextView)view.findViewById(R.id.textmessage)).setText(getResources().getString(R.string.dummy_text));
+        ((TextView)view.findViewById(R.id.textmessage)).setText(getResources().getString(R.string.update_text));
         ((Button)view.findViewById(R.id.buttonYes)).setText(getResources().getString(R.string.yes));
         ((Button)view.findViewById(R.id.buttonNo)).setText(getResources().getString(R.string.no));
         ((ImageView)view.findViewById(R.id.imageicon)).setImageResource(R.drawable.ic_warning);
@@ -143,7 +142,47 @@ public class RemoveItems extends AppCompatActivity {
         view.findViewById(R.id.buttonYes).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { //Yes button
+                updateInfo();
                     alertDialog.dismiss();;
+            }
+        });
+
+
+
+        view.findViewById(R.id.buttonNo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { //No button
+                alertDialog.dismiss();;
+            }
+        });
+
+        if(alertDialog.getWindow()!=null)
+        {
+            alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        }
+        alertDialog.show();
+    }
+    private void delete_dialog()
+    {
+        AlertDialog.Builder builder= new AlertDialog.Builder(RemoveItems.this, R.style.AlertDialogTheme);
+        View view = LayoutInflater.from(RemoveItems.this).inflate(
+                R.layout.layout_warning_dialog,
+                (ConstraintLayout)findViewById(R.id.dialog_container)
+        );
+        builder.setView(view);
+        ((TextView)view.findViewById(R.id.textTitle)).setText(getResources().getString(R.string.success_title));
+        ((TextView)view.findViewById(R.id.textmessage)).setText(getResources().getString(R.string.delete_text));
+        ((Button)view.findViewById(R.id.buttonYes)).setText(getResources().getString(R.string.yes));
+        ((Button)view.findViewById(R.id.buttonNo)).setText(getResources().getString(R.string.no));
+        ((ImageView)view.findViewById(R.id.imageicon)).setImageResource(R.drawable.ic_warning);
+
+        final  AlertDialog alertDialog= builder.create();
+
+        view.findViewById(R.id.buttonYes).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { //Yes button
+                deleteInfo();
+                alertDialog.dismiss();;
             }
         });
 

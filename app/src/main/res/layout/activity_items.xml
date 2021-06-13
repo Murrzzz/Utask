@@ -17,8 +17,8 @@
             xmlns:card_view="https://schemas.android.com/apk/res-auto"
             android:layout_height="wrap_content"
             android:scrollbars="vertical"
-            android:layout_margin="7dp"
-            >
+            app:cardCornerRadius="10dp"
+            android:layout_margin="7dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -42,8 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_margin="10dp"
-                >
+                android:layout_margin="10dp">
             <TextView
                 android:id="@+id/txt_messages"
                 android:layout_width="match_parent"
@@ -52,9 +51,7 @@
                 android:layout_weight="2"
                 android:textSize="10dp"
                 android:layout_margin="15dp"
-                android:paddingTop="15dp"
-                android:textColor="#D7C49E"
-                />
+                android:paddingTop="15dp"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 

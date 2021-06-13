@@ -24,12 +24,13 @@
             android:id="@+id/textTitle"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/dialog_title_warning_background"
+            android:background="@drawable/dialog_title_warning_delete"
             android:padding="10dp"
             android:textColor="@color/colorWhite"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
 
         <ImageView
             android:id="@+id/imageicon"
@@ -79,7 +80,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="40dp"
-        android:background="@drawable/dialog_button_success"
+        android:background="@drawable/dialog_button_delete"
         android:textColor="@color/colorWhite"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@id/layoutdialog"

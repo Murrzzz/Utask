@@ -216,20 +216,20 @@
         android:id="@+id/imgReply01"
         android:layout_width="256dp"
         android:layout_height="82dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/mood_outgoingmsgbubble"
         android:backgroundTint="#cae9ff"
-        app:layout_constraintTop_toTopOf="@+id/imageView8"
-        android:layout_marginTop="8dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintHorizontal_bias="0.928"
-        app:layout_constraintVertical_bias="0.213"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
 
-        android:visibility="invisible"/>
+        app:layout_constraintVertical_bias="0.169" />
 
     <TextView
         android:id="@+id/txtReply01"
@@ -256,20 +256,20 @@
         android:id="@+id/imgReply02"
         android:layout_width="270dp"
         android:layout_height="84dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/mood_incomingmsgbubble"
         android:backgroundTint="#89c2d9"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
-        app:layout_constraintVertical_bias="0.543"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
-        android:visibility="invisible"/>
+        app:layout_constraintVertical_bias="0.472" />
 
     <TextView
         android:id="@+id/txtReply02"
@@ -293,22 +293,21 @@
     <ImageView
         android:id="@+id/imgReply03"
         android:layout_width="290dp"
-        android:layout_height="189dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="70dp"
+        android:adjustViewBounds="true"
         android:background="@drawable/mood_transparent"
         android:backgroundTint="#89c2d9"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:adjustViewBounds="true"
-
         android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imgReply02"
-        android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="0.92"
-        app:layout_constraintHorizontal_bias="0.142" />
+        app:layout_constraintVertical_bias="0.682" />
 
     <TextView
         android:id="@+id/txtMoodSource"
