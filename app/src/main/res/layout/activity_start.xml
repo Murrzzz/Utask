@@ -35,7 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="400dp"
         android:textSize="20dp"
-        android:textColor="#ffff"
+        android:textStyle="italic"
+        android:textColor="#000000"
         android:text="Express Your Thoughts\n through Notes"
         android:textAlignment="center"/>
     <Button

@@ -4,16 +4,21 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp">
+    android:background="@drawable/darkblue_bg">
 
 
     <EditText
         android:id="@+id/message_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp"
         android:background="@android:color/transparent"
-        android:hint="Take Notes Here."
+        android:hint="Take Notes Here..."
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorGrey"
         android:textSize="20dp" />
 
     <EditText
@@ -21,11 +26,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Title"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorGrey"
         android:maxLength="30"
         android:maxLines="1"
         android:ellipsize="end"
         android:scrollHorizontally="true"
         android:textSize="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         />
 
 

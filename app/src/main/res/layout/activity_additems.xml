@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@drawable/darkblue_bg">
 
 <android.support.v7.widget.CardView
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#D7C49E"
+    android:layout_margin="10dp"
+    >
     <EditText
         android:id="@+id/txttitle"
         android:layout_width="match_parent"
@@ -19,36 +24,47 @@
         android:ellipsize="end"
         android:gravity="center"
         android:textSize="30dp"
+        android:textColor="#28282B"
+
         />
 </android.support.v7.widget.CardView>
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="747dp"
         android:layout_marginBottom="38dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="38dp">
-    <EditText
-        android:id="@+id/text_message"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:hint="Take Notes Here."
-        android:textSize="20dp"
-        android:layout_marginTop="50dp"/>
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/text_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Take Notes Here..."
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp" />
+
+        </LinearLayout>
     </ScrollView>
 
     <Button
         android:id="@+id/add_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add"
-        android:layout_alignParentBottom="true"/>
-
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/round_corner"
+        android:text="Add" />
 
 
 </RelativeLayout>

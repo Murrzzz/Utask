@@ -2,20 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/darkblue_bg"
     android:weightSum="1">
 
     <EditText
         android:id="@+id/edittext"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:background="@drawable/searchbar_design"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:hint=" Search here..."
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorGrey" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.98">
-
     ></android.support.v7.widget.RecyclerView>
 
 </LinearLayout>

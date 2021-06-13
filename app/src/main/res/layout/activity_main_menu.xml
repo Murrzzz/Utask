@@ -5,45 +5,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2C2E43"
-   >
+    android:background="#2C2E43">
 
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="350dp"
         android:layout_height="250dp"
-        android:layout_margin="5dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/top_bg_rounded"
-        tools:layout_editor_absoluteX="8dp" />
+        app:srcCompat="@drawable/top_bg_rounded" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintHorizontal_bias="0.951"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bookmark"
-        tools:layout_editor_absoluteX="295dp" />
+        app:srcCompat="@drawable/bookmark" />
 
     <TextView
         android:id="@+id/txtDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-
         android:scaleY="3"
         android:text="day"
         android:textAllCaps="true"
@@ -54,16 +51,16 @@
         app:layout_constraintLeft_toLeftOf="@+id/imageView"
         app:layout_constraintRight_toRightOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.55"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
+        app:layout_constraintVertical_bias="0.55" />
 
     <TextView
         android:id="@+id/txtDayCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="serif-monospace"
@@ -76,16 +73,16 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
+        app:layout_constraintVertical_bias="0.146" />
 
     <TextView
         android:id="@+id/txtDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="serif-monospace"
@@ -97,9 +94,7 @@
         app:layout_constraintLeft_toLeftOf="@+id/imageView"
         app:layout_constraintRight_toRightOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.886"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
+        app:layout_constraintVertical_bias="0.886" />
 
 
     <ImageView
@@ -112,31 +107,19 @@
         tools:layout_editor_absoluteX="64dp" />
 
     <Button
-        android:id="@+id/btnAboutUs"
+        android:id="@+id/btnAddTasks"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="16dp"
         android:alpha="0.7"
-        android:background="@drawable/teams"
-        android:elevation="10dp"
+        android:background="@drawable/adds"
+        android:elevation="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.774"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:layout_editor_absoluteX="129dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="View notes"
-        android:textColor="@color/colorWhite"
-        app:layout_constraintEnd_toEndOf="@id/btnViewTasks"
-        app:layout_constraintHorizontal_bias="0.266"
-        app:layout_constraintStart_toStartOf="@+id/btnViewTasks"
-        app:layout_constraintTop_toBottomOf="@+id/btnViewTasks"
-        tools:layout_editor_absoluteX="72dp" />
+        app:layout_constraintVertical_bias="0.106" />
 
     <Button
         android:id="@+id/btnViewTasks"
@@ -151,8 +134,7 @@
         app:layout_constraintHorizontal_bias="0.245"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.139"
-        tools:layout_editor_absoluteX="64dp" />
+        app:layout_constraintVertical_bias="0.122" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -162,33 +144,23 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/btnAddTasks"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@+id/btnAddTasks"
         app:layout_constraintRight_toRightOf="@+id/btnAddTasks"
         app:layout_constraintTop_toTopOf="@+id/btnAddTasks"
-        app:layout_constraintVertical_bias="0.0"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/btnAddTasks"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="8dp"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:alpha="0.7"
-        android:background="@drawable/adds"
-        android:elevation="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.845"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.153"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
+        android:text="View notes"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@id/btnViewTasks"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="@+id/btnViewTasks"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewTasks" />
 
     <TextView
         android:id="@+id/textView3"
@@ -198,9 +170,23 @@
         android:text="Add notes"
         android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="@+id/btnAddTasks"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="@+id/btnAddTasks"
-        app:layout_constraintTop_toBottomOf="@+id/btnAddTasks"
-        tools:layout_editor_absoluteX="228dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAddTasks" />
+
+    <Button
+        android:id="@+id/btnAboutUs"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:alpha="0.7"
+        android:background="@drawable/teams"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.191" />
 
     <TextView
         android:id="@+id/textView5"
